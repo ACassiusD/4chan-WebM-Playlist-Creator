@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "4chan WEBM playlist",
+  "description": "This extension to create a controllable playlist for 4chan WEBM threads specifically targeted towards music WEBM threads.",
+  "version": "1.0",
+  
+  "content_scripts": [
+	{
+	  "matches": ["http://boards.4chan.org/*/thread/*"],
+	  "js": ["jquery-3.2.1.min.js", "bootstrap.min.js", "webmscript.js"]
+	}
+  ]
+}
